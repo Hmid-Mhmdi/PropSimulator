@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'sans';
-    src: url('/fonts/IranianSans.ttf') format('ttf');
+    src: url('../public/fonts/IranianSans.ttf') format('ttf');
     font-weight: normal;
     font-style: normal;
   }

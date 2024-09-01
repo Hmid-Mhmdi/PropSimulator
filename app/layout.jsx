@@ -1,7 +1,10 @@
+import Provider from "@/components/provider";
 import Navbar from "../components/navbar";
-import "./globals.css";
-import "./fonts.css";
+import "../styles/globals.css";
 import Footer from "@/components/footer";
+import { ThemeProvider } from "next-themes";
+
+// for SEO metadata
 
 export const metadata = {
   title: "Prop Simulator",
@@ -12,9 +15,13 @@ export default function RootLayout({ children }) {
   return (
     <html lang="fa">
       <body className="bg-gray-900">
-        <Navbar />
-        {children}
-        <Footer />
+        <ThemeProvider attribute="class">
+          <Provider>
+            <Navbar />
+            {children}
+            <Footer />
+          </Provider>
+        </ThemeProvider>
       </body>
     </html>
   );

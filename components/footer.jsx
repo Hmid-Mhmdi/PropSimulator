@@ -25,18 +25,18 @@ const Footer = () => {
                 </Link>
               </li>
               <li>
-                <Link href="/rules" className="hover:text-gray-300">
+                <Link href="/#rules" className="hover:text-gray-300">
                   قوانین
                 </Link>
               </li>
               <li>
-                <Link href="/about-us" className="hover:text-gray-300">
+                <Link href="/#about" className="hover:text-gray-300">
                   درباره ما
                 </Link>
               </li>
 
               <li>
-                <Link href="/contact-us" className="hover:text-gray-300">
+                <Link href="/#contact" className="hover:text-gray-300">
                   ارتباط با ما
                 </Link>
               </li>
